@@ -1,0 +1,11 @@
+import java.util.*;
+public class Neon{
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt(),s=0;
+int sq=n*n;
+while(sq!=0){s+=sq%10;sq/=10;}
+if(s==n) System.out.println("Neon");
+else System.out.println("Not Neon");
+}
+}

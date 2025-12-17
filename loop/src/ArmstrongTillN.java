@@ -1,0 +1,12 @@
+import java.util.*;
+public class ArmstrongTillN{
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+for(int i=1;i<=n;i++){
+int t=i,s=0;
+while(t!=0){int d=t%10;s+=d*d*d;t/=10;}
+if(s==i) System.out.print(i+" ");
+}
+}
+}
